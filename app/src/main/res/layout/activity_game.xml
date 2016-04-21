@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/game_people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_and_right"
+        android:text="运送人数:2000人/次"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/game_rcv"
+        android:layout_width="500dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_left_and_right"
+        android:layout_marginLeft="@dimen/margin_left_and_right"
+        android:background="@color/gray_240"
+        android:layout_below="@+id/game_people" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:src="@drawable/train"
+        android:id="@+id/iv_train"
+        android:layout_alignTop="@+id/game_rcv"
+        android:layout_toRightOf="@+id/game_rcv"
+        android:layout_toEndOf="@+id/game_rcv" />
+</RelativeLayout>
